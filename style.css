@@ -1,13 +1,83 @@
-.main{
-    height: 70vh;
-    width: 60vw;
-    background-color: #04dfdf;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.main {
+  background-image: url(./abc.jpg);
+  height: 400px;
+  width: 77vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
-body{
-    background-color: #202020;
+.center {
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 35px;
+  box-shadow: 0 4px 18px 3px rgba(0, 0, 1, 1.8),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 3vh;
+}
+
+.input {
+  height: 50px;
+  width: 50vw;
+  font-size: large;
+  text-align: center;
+  margin-right: -2px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border: 0;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+}
+
+.input:focus {
+    outline: none;
+    background-color: rgb(131, 131, 131);
+    font-weight: bolder;
+}
+
+.submit {
+  height: 62px;
+  width: 20vw;
+  font-size: large;
+  margin-left: -4px;
+  border: 0;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+  cursor: pointer;
+}
+
+.submit:hover {
+    color: white;
+    background-color: #212121;
+  }
+
+.dlt {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  overflow: hidden;
+  font-size: 25px;
+}
+.dlt svg {
+  width: 44%;
+}
+.dlt:hover {
+  background-color: rgb(96, 182, 199);
+}
+
+/*  */
+
+.btn{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
 }

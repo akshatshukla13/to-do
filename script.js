@@ -1,4 +1,4 @@
-const main = document.querySelector(".main");
+const main = document.querySelector(".center");
 const submit = document.querySelector(".submit");
 const input = document.querySelector(".input");
 
@@ -10,7 +10,8 @@ const dlt = document.createElement("button");
 btn.type = "checkbox";
 dlt.type = "submit";
 
-dlt.innerText = "delete";
+dlt.innerText = "🗑";
+dlt.style.fontWeight = 'bold';
 task.style.display = "inline";
 btn.style.margin = "20px";
 task.style.marginRight = "20px";
@@ -21,7 +22,12 @@ dlt.setAttribute("class", "dlt");
 btn.setAttribute("class", "btn");
 
 submit.addEventListener("click", (e) => {
+  if(input.value === ""){
+    alert("Enter task first!!");
+    return;
+  }
   task.innerHTML = input.value;
+  input.value = "";
   const p = newTask.cloneNode(true);
   main.appendChild(p);
   console.log(p);
