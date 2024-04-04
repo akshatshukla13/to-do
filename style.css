@@ -1,7 +1,7 @@
 .main {
   background-image: url(./abc.jpg);
   height: 400px;
-  width: 77vw;
+  width: 85vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,18 +30,21 @@
   border-left: 5px solid black;
   border-bottom: 5px solid black;
   border-top: 5px solid black;
+  font-weight: bolder;
 }
 
 .input:focus {
     outline: none;
-    background-color: rgb(131, 131, 131);
+    background-color: #212121;
     font-weight: bolder;
+    color: white;
 }
 
 .submit {
   height: 62px;
   width: 20vw;
   font-size: large;
+  font-weight: bolder;
   margin-left: -4px;
   border: 0;
   border-top-right-radius: 30px;
